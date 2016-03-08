@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  
+root 'associations#index'
+
+
+
+
+
   resources :coaches
   resources :players
   resources :schedules
