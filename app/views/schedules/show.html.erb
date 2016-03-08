@@ -1,6 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Coach:</strong>
+  <%= @schedule.coach_id %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @schedule.player_id %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @schedule.team_id %>
+</p>
+
+<p>
   <strong>Start date:</strong>
   <%= @schedule.start_date %>
 </p>
@@ -8,11 +23,6 @@
 <p>
   <strong>End date:</strong>
   <%= @schedule.end_date %>
-</p>
-
-<p>
-  <strong>Nu of games:</strong>
-  <%= @schedule.nu_of_games %>
 </p>
 
 <%= link_to 'Edit', edit_schedule_path(@schedule) %> |

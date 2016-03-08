@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :schedules
 root 'associations#index'
 
 
@@ -8,7 +9,6 @@ root 'associations#index'
 
   resources :coaches
   resources :players
-  resources :schedules
   resources :teams
   resources :associations
   # The priority is based upon order of creation: first created -> highest priority.
